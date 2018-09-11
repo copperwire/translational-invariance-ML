@@ -51,4 +51,6 @@ for N_val in N_list:
     scores.append(find_score(N_val))
 
 plt.plot(N_list, scores, "x-")
-plt.show()
+plt.xlabel("Number of generated samples")
+plt.ylabel("Explained variance score")
+plt.savefig("explained_var.png")
